@@ -5,7 +5,10 @@ struct players: View {
 			ScrollView { // Move ScrollView to the parent view
 				 VStack(spacing: 0) { // Set spacing to 0 for tight stacking
 						ForEach(1..<20) { _ in
-							 item_row()
+							 NavigationLink(destination: player_detail()) {
+									item_row()
+							 }
+							 .buttonStyle(PlainButtonStyle())
 							 Divider()
 						}
 				 }

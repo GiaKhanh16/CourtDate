@@ -10,6 +10,7 @@ struct ClerkQuickstartApp: App {
 				 ZStack {
 						if clerk.isLoaded {
 							 ContentView()
+									.preferredColorScheme(.light)
 						} else {
 							 ProgressView()
 						}

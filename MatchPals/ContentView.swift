@@ -7,7 +7,7 @@ struct ContentView: View {
 	 var body: some View {
 			VStack {
 				 if let user = clerk.user {
-						home()
+						tab_view()
 //						Text("Hello, \(user.id)")
 //						Button("Sign Out") {
 //							 Task { try? await clerk.signOut() }

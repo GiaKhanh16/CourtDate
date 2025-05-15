@@ -15,9 +15,10 @@ struct tabs: View {
 			ScrollView(.horizontal, showsIndicators: false) {
 				 HStack(spacing: 18) {
 						ForEach(categories.allCases) { category in
+							 
 							 Text(category.rawValue)
 									.foregroundStyle(.white)
-									.fontWeight(.semibold)
+									.fontWeight(tab == category ? .semibold : .regular)
 									.background(alignment: .bottom) {
 										 if tab == category {
 												Capsule()
@@ -49,8 +50,12 @@ struct tabs: View {
 			.background {
 				 Rectangle()
 						.fill(Color("Purple"))
-						.padding(.top, -100)
+						.padding(.top, -300)
 						.shadow(color: .black.opacity(0.2), radius: 5, x: 5, y: 5)
 			}
 	 }
+}
+
+#Preview{
+	 home()
 }

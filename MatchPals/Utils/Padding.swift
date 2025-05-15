@@ -16,6 +16,7 @@ extension CGFloat {
 	 public static let paddingLarge: CGFloat = 16.0
 	 public static let paddingExtraLarge: CGFloat = 24.0
 	 public static let paddingJumbo: CGFloat = 32.0
+	 public static let paddingMidJumbo: CGFloat = 40.0
 	 public static let paddingHuge: CGFloat = 48.0
 
 			// MARK: Screen Edge Margins

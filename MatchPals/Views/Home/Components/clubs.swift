@@ -36,7 +36,7 @@ struct club_row: View {
 //				 .padding(.bottom, 40)
 				 Spacer()
 			}
-			.frame(width: .infinity)
+//			.frame(width: .infinity)
 			.padding()
 			.background(Color.white)
 	 }

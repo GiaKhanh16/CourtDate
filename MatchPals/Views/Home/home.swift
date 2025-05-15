@@ -34,12 +34,6 @@ struct home: View {
 									}
 							 }
 						}
-
-						.background {
-							 Rectangle()
-									.fill(Color("BG").mix(with: .gray, by: 0.12))
-									.ignoresSafeArea()
-						}
 						.navigationTitle("Khanh Nguyen")
 						.searchable(text: $searchText)
 						.toolbarBackground(.visible, for: .navigationBar)
@@ -57,6 +51,11 @@ struct home: View {
 									}
 							 }
 						}
+						.background {
+							 Rectangle()
+									.fill(Color("BG").mix(with: .gray, by: 0.12))
+									.ignoresSafeArea()
+						}
 						.sheet(isPresented: $sheet) {
 							 empty_sheet()
 						}
@@ -73,5 +72,5 @@ struct empty_sheet: View {
 
 
 #Preview {
-	 home()
+	 tab_view()
 }
